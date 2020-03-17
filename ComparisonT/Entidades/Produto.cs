@@ -1,9 +1,8 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace ComparisonT.Entidades {
-    //usando o Icomparable 
-    class Produto : IComparable<Produto> {
+    //usando o Icomparable - agora tiramos o Icomparable
+    class Produto {
 
         public string Nome { get; set; }
         public double Preco { get; set; }
@@ -18,11 +17,11 @@ namespace ComparisonT.Entidades {
             return Nome + ", " + Preco.ToString("F2", CultureInfo.InvariantCulture);
         }
         //metodo da operação Para comparar.
-        public int CompareTo(Produto outro) {
+        //public int CompareTo(Produto outro) {
             //aqui se quisermos trocar o metodo de comparação de nome para preco
             //precisamos alterar a linha abaixo. com isso a classe não fica fechada.
-            return Nome.ToUpper().CompareTo(outro.Nome.ToUpper());
-        }
+         //   return Nome.ToUpper().CompareTo(outro.Nome.ToUpper());
+        //}
 
 
     }
