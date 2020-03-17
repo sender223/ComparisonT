@@ -14,7 +14,7 @@ namespace ComparisonT {
             lista.Add(new Produto("Tablet", 450.00));
             //agora iremos usar a versão que utiliza a comparison<T>
             //colocando como argumento a função CompareProdutos.
-            //isso é uma Delagate, é uma referencia para função com TaipSafet
+            //isso é uma Delagate, é uma referencia para função com Type Safety
             lista.Sort(CompareProdutos);
 
             //SEGUNDO EXEMPLO
@@ -45,5 +45,6 @@ namespace ComparisonT {
         }
         //exemplo de Comparison<T> (System)
         public delegate int Comparison<in T>(T x, T y);
-    }
+
+                                     }
 }

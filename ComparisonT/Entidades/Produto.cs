@@ -22,7 +22,5 @@ namespace ComparisonT.Entidades {
             //precisamos alterar a linha abaixo. com isso a classe não fica fechada.
          //   return Nome.ToUpper().CompareTo(outro.Nome.ToUpper());
         //}
-
-
     }
 }
